@@ -1,6 +1,8 @@
 # 60 Days Of Algorithms And Data Structures
 
-![lol](https://www.linkpicture.com/q/AlgoImage.jpg)
+<p align="center">
+ <img src="https://www.linkpicture.com/q/AlgoImage.jpg" alt="90DaysOfDevOps Logo" width="50%" height="50%" />
+</p>
 
 Этот репозиторий будет документировать мой личный прогресс в изучении алгоритмов на С++. На протяжении 60 дней я буду решать разного рода задачи безостановочно!
 
