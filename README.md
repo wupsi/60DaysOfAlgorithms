@@ -1,6 +1,6 @@
 # 60 Days Of Algorithms And Data Structures
 
-<p align="center">
+<p align="left">
  <img src="https://www.linkpicture.com/q/AlgoImage.jpg" alt="90DaysOfDevOps Logo" width="50%" height="50%" />
 </p>
 
