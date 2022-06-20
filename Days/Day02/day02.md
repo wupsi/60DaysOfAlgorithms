@@ -185,40 +185,40 @@ Stack last element: -9999999
 ```
 struct stack{
 	
-	private:
-		int pos;
-		int arr[100000];
+private:
+	int pos;
+	int arr[100000];
 
-	public:	
-		stack(){			
-			pos = 0;
-		}
+public:	
+	stack(){			
+		pos = 0;
+	}
 
-		void push(int x){
-			arr[pos++] = x;	
-		}
+	void push(int x){
+		arr[pos++] = x;	
+	}
 
-		void pop(){
-			if(!empty())
-				pos--;
-			else
-				cout << "ERROR\n";
-		}
-		
-		int top(){	
-			if(!empty())
-				return arr[pos - 1];
-			else
-				return -9999999;
-		}
+	void pop(){
+		if(!empty())
+			pos--;
+		else
+			cout << "ERROR\n";
+	}
 
-		 bool empty(){
-			return pos == 0;
-		}
-		
-		int size(){
-			return pos;
-		}
+	int top(){	
+		if(!empty())
+			return arr[pos - 1];
+		else
+			return -9999999;
+	}
+
+	 bool empty(){
+		return pos == 0;
+	}
+
+	int size(){
+		return pos;
+	}
 };
 ```
 В структуре мы закрыли доступ к компонентам, к ним доступ имеют только другие члены структуры.
