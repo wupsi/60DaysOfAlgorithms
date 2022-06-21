@@ -400,9 +400,225 @@ int  main(){
 }
 ```
 
+## Deque
+
+Дек(deque) - структура данных, которая позволяет добавлять элементы и в конец, и в начало, а также удалять элементы из конца и из начала. В С++ уже есть готовый шаблон для `deque`.
+
+### Функции `deque`
+```
+push_back(x)		// Вставляет в конец дека x
+push_front(x)		// Вставляет в начало дека x
+pop_back()			// Удаляет конец дека
+pop_front()			// Удаляет начало дека
+back()				// Возвращает конец дека
+front()				// Возвращает начало дека
+empty()				// Проверяет дек на пустоту
+size()				// Возвращает размер дека
+clear()				// Очищает дек
+```
+
+Думаю дальнейших объяснении дека не требуется, можно начать думать о реализации дека. Думаю будет правильным за основу брать метод реализации очереди, когда мы берем один отрезок массива двумя компонентами `start` и `finish`. Но в нашем случае мы работаем с обоих сторон, и спереди и сзади.  
+```
+dq = [1, 2, 3, 4, 5]	// здесь start = 0, finish = 4
+```
+В таком случае мы можем добавить спереди, увеличив `finish`, но добавить сзади мы не сможем, в таком случае `start` уйдет в минусовое значение. Чтобы таких последствий не было, можно `start` и `end` обозначить центром массива.
+Допустим что размер массива `arr[100000]` 100.000. Тогда пусть `start = 50000`, `finish = 500000`. Тогда проблема с минусовым значением нас не потревожит. Можно запутаться в направлениях, поэтому в нашем случае пусть `front` будет слева, `back` справа массива. И так, подготовим шаблон: 
+
+```
+struct  deque{
+
+private:
+	int start, finish;
+	int arr[100000];
+	
+public:
+	deque(){
+		start = 50000;
+		finish = 50000;
+	}
+
+	void push_back(int x){}
+	
+	void push_front(int x){}
+
+	void pop_back(){}
+
+	void pop_front(){}
+
+	int back(){}
+
+	int front(){}
+
+	bool empty(){}
+
+	int size(){}
+	
+	void clear(){}
+};
+```
+
+### Реализация `deque`
+
+```
+struct deque{
+
+private:
+	int start, finish;
+	int arr[100000];
+
+public:
+	deque(){
+	start = 50000;
+	finish = 50000;
+	}
+	
+	void push_back(int x){
+		arr[finish++] = x;
+	}
+
+	void push_front(int x){
+		arr[--start] = x;
+	}
+
+	void pop_back(){
+		if(!empty())
+			finish--;
+		else
+			cout << "ERROR\n";
+	}
+	
+	void pop_front(){
+		if(!empty())
+			start++;
+		else
+			cout << "ERROR\n";
+	}
+
+	int back(){
+		if(!empty())
+			return arr[finish - 1];
+		else
+			return  -9999999;
+	}
+
+	int front(){
+		if(!empty())
+			return arr[start];
+		else
+			return  -9999999;
+	}
+
+	bool empty(){
+		return finish - start <= 0;
+	}
+
+	int size(){
+		return finish - start;
+	}
+
+	void clear(){
+		start = 50000;
+		finish = 50000;
+	}
+
+	void  print(){
+		cout << "Array: ";
+		for(int i = start; i < finish; i++){
+			cout << arr[i] << " ";
+		}
+		cout << endl;
+	}
+};
+```
+
+Добавил метод `print` для ясности, что там вообще происходит.
+
+### Тестирование
+
+```
+int main(){
+
+    deque dq;                   // []
+
+    dq.push_back(1);            // [1]
+    dq.push_back(2);            // [1, 2]
+    dq.push_back(3);            // [1, 2, 3]
+    dq.push_front(4);           // [4, 1, 2, 3]
+    dq.push_front(5);           // [5, 4, 1, 2, 3]
+    dq.push_front(6);           // [6, 5, 4, 1, 2, 3]
+
+    cout << "Deque size: " << dq.size() << endl;    // 6
+    cout << "Deque front: " << dq.front() << endl;  // 6
+    cout << "Deque back: " << dq.back() << endl;    // 3
+    dq.print();                                     // 6 5 4 1 2 3
+    dq.pop_back();                                  // [6, 5, 4, 1, 2]
+    dq.print();                                     // 6 5 4 1 2
+    dq.pop_front();                                 // [5, 4, 1, 2]
+    cout << "Deque front: " << dq.front() << endl;  // 5
+    cout << "Deque back: " << dq.back() << endl;    // 2
+    dq.print();                                     // 5 4 1 2
+
+    dq.push_back(7);                                // [5, 4, 1, 2, 7]
+    dq.push_back(8);                                // [5, 4, 1, 2, 7, 8]
+    dq.print();                                     // 5 4 1 2 7 8
+    dq.pop_front();                                 // [4, 1, 2, 7, 8]
+    dq.pop_front();                                 // [1, 2, 7, 8]
+    dq.pop_front();                                 // [2, 7, 8]
+    dq.pop_front();                                 // [7, 8]
+    dq.print();                                     // 7 8
+    dq.pop_back();                                  // [7]
+    
+    cout << "Deque size: " << dq.size() << endl;    // 1
+    dq.pop_back();                                  // []
+    cout << "Deque is empty? ";
+    cout << (dq.empty() ? "YES\n" : "NO\n");        // YES
+    dq.pop_front();                                 // ERROR
+    dq.pop_back();                                  // ERROR
+    cout << "Deque front: " << dq.front() << endl;  // -9999999
+    cout << "Deque back: " << dq.back() << endl;    // -9999999
+    cout << "Deque size: " << dq.size() << endl;    // 0
+
+    dq.push_back(9);                                // [9]
+    dq.push_front(10);                              // [10, 9]
+    dq.print();                                     // 10 9
+    dq.clear();                                     // []
+    dq.print();                                     // 
+}
+```
+```
+Output:
+Deque size: 6
+Deque front: 6
+Deque back: 3
+Array: 6 5 4 1 2 3
+Array: 6 5 4 1 2
+Deque front: 5
+Deque back: 2
+Array: 5 4 1 2
+Array: 5 4 1 2 7 8
+Array: 7 8
+Deque size: 1
+Deque is empty? YES
+ERROR
+ERROR
+Deque front: -9999999
+Deque back: -9999999
+Deque size: 0
+Array: 10 9
+Array:
+```
+
+## Заключение
+
+На самом деле контейнеры `stack`, `queue` и `deque` очень быстры и полезны. Все методы, которые мы сегодня прописали, операции удаления или вставки выполняются за O(1), что является очень быстрым показателем. А то что мы сами себе прописали свою структуру очень даже неплохой результат :).
+
 ## Использованные материалы
 
 - [C++ | Структуры](https://metanit.com/cpp/tutorial/5.8.php)
 - [Стек(stack) в C++](https://codelessons.ru/cplusplus/realizaciya-steka-stack-v-c.html)
 - [stack - C++ Reference](https://cplusplus.com/reference/stack/stack/)
 - [Спецификаторы доступа](https://ravesli.com/urok-114-spetsifikatory-dostupa-public-i-private/)
+- [Очередь(queue) в С++](https://codelessons.ru/cplusplus/ochered-queue-v-c-realizaciya-i-chto-eto-voobshhe-takoe.html)
+- [queue - C++ Reference](https://cplusplus.com/reference/queue/queue/)
+- [Контейнер deque](https://server.179.ru/tasks/cpp/total/225.html)
+- [deque - C++ Reference](https://cplusplus.com/reference/deque/deque)
