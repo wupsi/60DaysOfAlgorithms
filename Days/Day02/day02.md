@@ -3,6 +3,18 @@
 
 В течении следующих двух дней рассмотрим структуры данных stack, queue, deque. Разберем структуру(struct), приватность и публичность переменных и функции.
 
+## Problems
+
+- [✔️] [A. Стек с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=55#1)
+- [❌] [B. Очередь с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=58#1)
+- [❌] [C. Дек с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=61#1)
+- [❌] [D. Списки по классам](https://informatics.msk.ru/mod/statements/view.php?chapterid=49#1)
+- [❌] [E. Правильная скобочная последовательность](https://informatics.msk.ru/mod/statements/view.php?chapterid=51#1)
+- [❌] [F. Игра в пьяницу](https://informatics.msk.ru/mod/statements/view.php?chapterid=50#1)
+- [❌] [G. Постфиксная запись](https://informatics.msk.ru/mod/statements/view.php?chapterid=52#1)
+- [❌] [H. Гоблины и шаманы](https://informatics.msk.ru/mod/statements/view.php?chapterid=112984#1)
+- [❌] [I. Контейнеры](https://informatics.msk.ru/mod/statements/view.php?chapterid=53#1)
+
 ## Stack
 
 Стек — это структура данных, которая работает по принципу **FILO** (first in - last out; первый пришел - последний ушел). В C++ уже есть готовый шаблон — `stack`. Но сегодня шаблон мы использовать не будем, вместо этого попытаемся реализовать структуру `stack` сами.
@@ -607,18 +619,6 @@ Deque size: 0
 Array: 10 9
 Array:
 ```
-
-## Problems
-
-- [✔️] [A. Стек с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=55#1)
-- [❌] [B. Очередь с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=58#1)
-- [❌] [C. Дек с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=61#1)
-- [❌] [D. Списки по классам](https://informatics.msk.ru/mod/statements/view.php?chapterid=49#1)
-- [❌] [E. Правильная скобочная последовательность](https://informatics.msk.ru/mod/statements/view.php?chapterid=51#1)
-- [❌] [F. Игра в пьяницу](https://informatics.msk.ru/mod/statements/view.php?chapterid=50#1)
-- [❌] [G. Постфиксная запись](https://informatics.msk.ru/mod/statements/view.php?chapterid=52#1)
-- [❌] [H. Гоблины и шаманы](https://informatics.msk.ru/mod/statements/view.php?chapterid=112984#1)
-- [❌] [I. Контейнеры](https://informatics.msk.ru/mod/statements/view.php?chapterid=53#1)
 
 ## Заключение
 
