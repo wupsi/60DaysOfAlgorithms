@@ -608,6 +608,18 @@ Array: 10 9
 Array:
 ```
 
+## Problems
+
+- [✔️] [A. Стек с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=55#1)
+- [❌] [B. Очередь с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=58#1)
+- [❌] [C. Дек с защитой от ошибок](https://informatics.msk.ru/mod/statements/view.php?chapterid=61#1)
+- [❌] [D. Списки по классам](https://informatics.msk.ru/mod/statements/view.php?chapterid=49#1)
+- [❌] [E. Правильная скобочная последовательность](https://informatics.msk.ru/mod/statements/view.php?chapterid=51#1)
+- [❌] [F. Игра в пьяницу](https://informatics.msk.ru/mod/statements/view.php?chapterid=50#1)
+- [❌] [G. Постфиксная запись](https://informatics.msk.ru/mod/statements/view.php?chapterid=52#1)
+- [❌] [H. Гоблины и шаманы](https://informatics.msk.ru/mod/statements/view.php?chapterid=112984#1)
+- [❌] [I. Контейнеры](https://informatics.msk.ru/mod/statements/view.php?chapterid=53#1)
+
 ## Заключение
 
 На самом деле контейнеры `stack`, `queue` и `deque` очень быстры и полезны. Все методы, которые мы сегодня прописали, операции удаления или вставки выполняются за O(1), что является очень быстрым показателем. А то что мы сами себе прописали свою структуру очень даже неплохой результат :).
