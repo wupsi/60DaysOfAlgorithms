@@ -20,7 +20,7 @@
 
 - [✔️] 2 > Stack, Queue, Deque
 - [✔️] 3 > Stack, Queue, Deque
-- [❌] 4 > Linked Lists
+- [✔️] 4 > Linked Lists
 - [❌] 5 > Linked Lists
 - [❌] 6 > Double-Linked Lists
 - [❌] 7 >Double-Linked Lists
