@@ -1,0 +1,7 @@
++1 I am a pupil.
++2 He is a pupil.
++2 She is a pupil.
++3 This is a pupil.
+*2 Bob went home.
+-3
+-3
