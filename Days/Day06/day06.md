@@ -1,4 +1,4 @@
-## Linked Lists - Day 5
+## Linked Lists - Day 6
 
 ## Problems
 
