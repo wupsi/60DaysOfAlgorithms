@@ -23,7 +23,7 @@
 - [✔️] 4 > Linked Lists
 - [✔️] 5 > Linked Lists
 - [✔️] 6 > Doubly Linked Lists
-- [❌] 7 > Doubly Linked Lists
+- [✔️] 7 > Doubly Linked Lists
 
 ### Sorting and Searching
 
