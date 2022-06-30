@@ -27,7 +27,7 @@
 
 ### Sorting and Searching
 
-- [❌] 8 > Linear, binary search
+- [✔️] 8 > Linear, binary search
 - [❌] 9 > Binary Search Tree, Priority Queues
 - [❌] 10 > Binary Search Tree, Priority Queues
 - [❌] 11 > Binary Search Tree, Priority Queues
