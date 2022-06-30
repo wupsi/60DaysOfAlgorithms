@@ -166,15 +166,15 @@ int main(){
 	while(true){
 		mid = (first + last) / 2;					// Находим центр
 
-        if(x < arr[first] or x > arr[last]){                			// Если искомое число больше максимума или меньше минимума массива
-            cout << x <<  " not found...";                  			// Значит его в массиве нет
-            break;                                          			// Завершаем цикл
-        }
+		if(x < arr[first] or x > arr[last]){                		// Если искомое число больше максимума или меньше минимума массива
+		    cout << x <<  " not found...";                  		// Значит его в массиве нет
+		    break;                                          		// Завершаем цикл
+		}
 
-        if(first > last){                                   			// Если искомого числа нету между элементами
-            cout << x <<  " not found...";                  			// Это говорит о том, что first завалил за last
-            break;                                          			// Завершаем цикл
-        }
+		if(first > last){                                   		// Если искомого числа нету между элементами
+		    cout << x <<  " not found...";                  		// Это говорит о том, что first завалил за last
+		    break;                                          		// Завершаем цикл
+		}
 
 		if(x > arr[mid])						// Если искомое число больше mid-элемента
 			first = mid + 1;					// Соответственно число находится в правой части массива
@@ -216,15 +216,15 @@ int BinarySearch(int array[], int size, int value){
 	while(true){
 		mid = (first + last) / 2;
 
-        if(value < array[first] or value > array[last] or first > last)
-            return -1;
+		if(value < array[first] or value > array[last] or first > last)
+		    return -1;
 
 		if(value > array[mid])
 			first = mid + 1;
 		else if(value < array[mid])
 			last = mid - 1;
 		else
-            return mid;
+            		return mid;
 	}
 }
 ```
