@@ -18,15 +18,12 @@
   
 ### Leetcode:
 
-- [❌] [A. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
-- [❌] [B. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
-- [❌] [C. First Bad Version](https://leetcode.com/problems/first-bad-version/)
-- [❌] [D. Intersection Of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
-- [❌] [E. Intersection Of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
-- [❌] [F. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
-- [❌] [G. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
-- [❌] [H. Arranging Coins](https://leetcode.com/problems/arranging-coins/)
-- [❌] [I. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
+- [✔️] [A. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+- [✔️] [B. First Bad Version](https://leetcode.com/problems/first-bad-version/)
+- [✔️] [C. Intersection Of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
+- [✔️] [D. Intersection Of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+- [✔️] [E. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+- [✔️] [F. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
 
 ## Linear search
 
