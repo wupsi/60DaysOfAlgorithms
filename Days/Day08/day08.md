@@ -6,27 +6,27 @@
   
 ### Informatics:
 
-- [❌] [A. Линейный поиск - 3](https://informatics.msk.ru/mod/statements/view.php?chapterid=226#1)
-- [❌] [B. Максимальный элемент массива](https://informatics.msk.ru/mod/statements/view.php?chapterid=227#1)
-- [❌] [C. Номер максимального элемента массива](https://informatics.msk.ru/mod/statements/view.php?chapterid=228#1)
-- [❌] [D. Матрица](https://informatics.msk.ru/mod/statements/view.php?chapterid=1427#1)
-- [❌] [E. Серебряная медаль](https://informatics.msk.ru/mod/statements/view.php?chapterid=1440#1)
-- [❌] [F. Контроперация](https://informatics.msk.ru/mod/statements/view.php?chapterid=1447#1)
-- [❌] [G. Двоичный поиск](https://informatics.msk.ru/mod/statements/view.php?chapterid=4#1)
-- [❌] [H. Сложность двоичного поиска](https://informatics.msk.ru/mod/statements/view.php?chapterid=3#1)
-- [❌] [I. Левый и правый двоичный поиск](https://informatics.msk.ru/mod/statements/view.php?chapterid=111728#1)
+- [✔️] [A. Линейный поиск - 3](https://informatics.msk.ru/mod/statements/view.php?chapterid=226#1)
+- [✔️] [B. Максимальный элемент массива](https://informatics.msk.ru/mod/statements/view.php?chapterid=227#1)
+- [✔️] [C. Номер максимального элемента массива](https://informatics.msk.ru/mod/statements/view.php?chapterid=228#1)
+- [✔️] [D. Матрица](https://informatics.msk.ru/mod/statements/view.php?chapterid=1427#1)
+- [✔️] [E. Серебряная медаль](https://informatics.msk.ru/mod/statements/view.php?chapterid=1440#1)
+- [✔️] [F. Контроперация](https://informatics.msk.ru/mod/statements/view.php?chapterid=1447#1)
+- [✔️] [G. Двоичный поиск](https://informatics.msk.ru/mod/statements/view.php?chapterid=4#1)
+- [✔️] [H. Сложность двоичного поиска](https://informatics.msk.ru/mod/statements/view.php?chapterid=3#1)
+- [✔️] [I. Левый и правый двоичный поиск](https://informatics.msk.ru/mod/statements/view.php?chapterid=111728#1)
   
 ### Leetcode:
 
-- [❌] [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
-- [❌] [Sqrt(x)](https://leetcode.com/problems/sqrtx/)
-- [❌] [First Bad Version](https://leetcode.com/problems/first-bad-version/)
-- [❌] [Intersection Of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
-- [❌] [Intersection Of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
-- [❌] [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
-- [❌] [Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
-- [❌] [Arranging Coins](https://leetcode.com/problems/arranging-coins/)
-- [❌] [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
+- [❌] [A. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+- [❌] [B. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+- [❌] [C. First Bad Version](https://leetcode.com/problems/first-bad-version/)
+- [❌] [D. Intersection Of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
+- [❌] [E. Intersection Of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+- [❌] [F. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
+- [❌] [G. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+- [❌] [H. Arranging Coins](https://leetcode.com/problems/arranging-coins/)
+- [❌] [I. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
 
 ## Linear search
 
