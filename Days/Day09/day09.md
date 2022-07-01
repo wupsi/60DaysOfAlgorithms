@@ -114,7 +114,7 @@ int main(){
 
 	BinarySearchTree BST;
 	// Step 1:
-	BinarySearchTree BST; 						// root = NULL;
+	BinarySearchTree BST; 				// root = NULL;
 	  
 	// Step 2:
 	BST.root = BST.insert(BST.root, 1); 		// root = node; node->data = 1, node->left = NULL, node->right = NULL;
