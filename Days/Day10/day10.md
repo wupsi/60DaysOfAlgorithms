@@ -41,13 +41,13 @@
 ```
 Node  *remove(Node  *current, int  x){
 	if(current ==  NULL) return  NULL;
-	if(x > current->data) current->right =  remove(current->right, x); 				// Рекурсивно находим узел
+	if(x > current->data) current->right =  remove(current->right, x); 			// Рекурсивно находим узел
 	else  if(x < current->data) current->left =  remove(current->left, x);
-	else{ 																			// Если узел найден
+	else{ 											// Если узел найден
 		if(current->left ==  NULL  and current->right ==  NULL) current =  NULL; 	// Если это лист, текущий узел приравниваем к NULL
-		else  if(current->right ==  NULL) current = current->left; 					// Если у узла только левый потомок
-		else  if(current->left ==  NULL) current = current->right; 					// Если у узла только правый потомок
-		else{ 																		// Если у узла два потомка
+		else  if(current->right ==  NULL) current = current->left; 			// Если у узла только левый потомок
+		else  if(current->left ==  NULL) current = current->right; 			// Если у узла только правый потомок
+		else{ 										// Если у узла два потомка
 			Node *minRight =  findMin(current->right);
 			current->data = minRight->data;
 			current->right =  remove(current->right, minRight->data);
