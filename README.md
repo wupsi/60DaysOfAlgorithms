@@ -28,10 +28,10 @@
 ### Sorting and Searching
 
 - [✔️] 8 > Linear, binary search
-- [✔️] 9 > Binary Search Tree, Priority Queues
-- [✔️] 10 > Binary Search Tree, Priority Queues
-- [✔️] 11 > Binary Search Tree, Priority Queues
-- [❌] 12 > Binary Search Tree, Priority Queues
+- [✔️] 9 > Binary Search Tree
+- [✔️] 10 > Binary Search Tree
+- [✔️] 11 > Binary Search Tree
+- [✔️] 12 > Binary Search Tree
 - [❌] 13 > Heap, Merge, Quick Sorts
 - [❌] 14 > Heap, Merge, Quick Sorts
 - [❌] 15 > Heap, Merge, Quick Sorts
