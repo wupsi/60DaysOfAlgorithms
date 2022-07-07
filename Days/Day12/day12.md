@@ -1,4 +1,4 @@
-# Binary Search Tree - Day 11
+# Binary Search Tree - Day 12
 
 Продолжаем практиковаться на задачах Binary Search Tree!
 

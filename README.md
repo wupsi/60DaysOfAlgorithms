@@ -68,9 +68,12 @@
 - [❌] 35 > Contest #3
 - [❌] 36 > Contest #4
 
+### Leetcode Marathon - 100 easy problems
+
+- [❌] 37 > Leetcode Marathon
+
 ### Coming soon...
 
-- [❌] 37 > 
 - [❌] 38 > 
 - [❌] 39 > 
 - [❌] 40 > 
