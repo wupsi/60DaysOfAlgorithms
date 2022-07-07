@@ -37,7 +37,7 @@ public:
     }
 
     int extractMax(){
-        int root  = mh[0];
+        int root = mh[0];
         swap(mh[0], mh[mh.size() - 1]);
         mh.pop_back();
         if(!mh.empty()) heapify(0);
@@ -72,6 +72,12 @@ public:
         printTree(right(current));
         return;
     }
+
+    void print(){
+        for(int i = 0; i < mh.size(); i++)
+            cout << mh[i] << " ";
+        cout << endl;
+    }
 };
 
 int main(){
@@ -83,6 +89,7 @@ int main(){
         int x; cin >> x;
         heap.insert(x);
     }
+    heap.print();
     for(int i = 0; i < n; i++){
         heap.extractMax();
         heap.printTree(0);

@@ -37,7 +37,7 @@ public:
     }
 
     int extractMin(){
-        int root  = mh[0];
+        int root = mh[0];
         swap(mh[0], mh[mh.size() - 1]);
         mh.pop_back();
         if(!mh.empty()) heapify(0);
