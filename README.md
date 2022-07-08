@@ -33,7 +33,7 @@
 - [✔️] 11 > Binary Search Tree
 - [✔️] 12 > Binary Search Tree
 - [✔️] 13 > Heap, Merge, Quick Sorts
-- [❌] 14 > Heap, Merge, Quick Sorts
+- [✔️] 14 > Heap, Merge, Quick Sorts
 - [❌] 15 > Heap, Merge, Quick Sorts
 - [❌] 16 > Heap, Merge, Quick Sorts
 
