@@ -3,10 +3,10 @@
 
 ## Problems
 
-- [❌] [Объединение последовательностей](https://informatics.msk.ru/mod/statements/view.php?chapterid=1442#1)
-- [❌] [Сортировка слиянием](https://informatics.msk.ru/mod/statements/view.php?chapterid=766#1)
-- [❌] [Похожие массивы](https://informatics.msk.ru/mod/statements/view.php?chapterid=767#1)
-- [❌] [Разные](https://informatics.msk.ru/mod/statements/view.php?chapterid=1418#1)
+- [✔️] [A. Объединение последовательностей](https://informatics.msk.ru/mod/statements/view.php?chapterid=1442#1)
+- [✔️] [B. Сортировка слиянием](https://informatics.msk.ru/mod/statements/view.php?chapterid=766#1)
+- [✔️] [C. Похожие массивы](https://informatics.msk.ru/mod/statements/view.php?chapterid=767#1)
+- [✔️] [D. Разные](https://informatics.msk.ru/mod/statements/view.php?chapterid=1418#1)
 
 ## Merge Sort
 
