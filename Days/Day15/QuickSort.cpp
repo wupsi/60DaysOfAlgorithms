@@ -16,13 +16,12 @@ void QuickSort(int arr[], int left, int right){
 }
 
 int main(){
-
-    int n; cin >> n;
-    int arr[n];
-    for(int i = 0; i < n; i++)
-        cin >> arr[i];
-
-    QuickSort(arr, 0, n - 1);
-    for(int i = 0; i < n; i++)
-        cout << arr[i] << " ";    
+  
+	int n = 7;
+	int arr[n] = {1, 7, 5, 4, 2, 8, 0};
+	  
+	QuickSort(arr, 0, n - 1);
+	
+	for(int i = 0; i < n; i++)
+		cout << arr[i] << " ";
 }

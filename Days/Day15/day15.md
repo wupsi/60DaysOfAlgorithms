@@ -72,10 +72,10 @@ while(l <= r){
 **Третьим** шагом будет рекурсивный вызов функции, на этот раз вместо всего массива мы передадим отрезок `[left, r]`, левую часть массива, и `[l, right]`, правую часть массива. Тогда левый и правый отрезок пройдут первый и второй шаг повторно. И продолжаться это будет до тех пор, пока `left` будет меньше `right`.
 
 ```
-void  QuickSort(int  arr[], int  left, int  right){
+void QuickSort(int arr[], int left, int right){
 	if(left < right){
 		int l = left, r = right;
-		int mid = arr[(left + right) /  2];
+		int mid = arr[(left + right) / 2];
 		while(l <= r){
 			while(arr[l] < mid) l++;
 			while(arr[r] > mid) r--;
@@ -85,6 +85,24 @@ void  QuickSort(int  arr[], int  left, int  right){
 		QuickSort(arr, l, right);
 	}
 }
+```
+
+Протестим:
+```
+int main(){
+  
+	int n = 7;
+	int arr[n] = {1, 7, 5, 4, 2, 8, 0};
+	  
+	QuickSort(arr, 0, n - 1);
+	
+	for(int i = 0; i < n; i++)
+		cout << arr[i] << " ";
+}
+```
+`Output:`
+```
+0 1 2 4 5 7 8
 ```
 
 ## Использованные материалы
