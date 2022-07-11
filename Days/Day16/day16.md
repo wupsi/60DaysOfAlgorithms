@@ -6,14 +6,10 @@
 
 ### Leetcode
 
-- [❌] [A. Sort List](https://leetcode.com/problems/sort-list/)
-- [❌] [B. Largest Number](https://leetcode.com/problems/largest-number/)
-- [❌] [C. Find Right Interval](https://leetcode.com/problems/find-right-interval/)
-- [❌] [D. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
-- [✔️] [E. Relative Ranks](https://leetcode.com/problems/relative-ranks/)
-- [✔️] [F. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)
-- [✔️] [G. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
-- [✔️] [H. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+- [✔️] [A. Relative Ranks](https://leetcode.com/problems/relative-ranks/)
+- [✔️] [B. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)
+- [✔️] [C. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+- [✔️] [D. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 
 ## Сравнение производительности алгоритмов сортировки
 
