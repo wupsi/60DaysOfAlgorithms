@@ -40,7 +40,7 @@
 ### Testing
 
 - [✔️] 17 > [Contest #1](https://github.com/wupsi/60DaysOfAlgorithms/tree/main/Days/Day17)
-- [❌] 18 > Contest #2
+- [✔️] 18 > [Contest #2](https://github.com/wupsi/60DaysOfAlgorithms/tree/main/Days/Day18)
 
 ### Text processing 
 
